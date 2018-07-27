@@ -1,0 +1,2 @@
+gausslaw.py is used to calculate the surface integral of an electric field. 
+It uses knowledge of charges to calculate electric fields .

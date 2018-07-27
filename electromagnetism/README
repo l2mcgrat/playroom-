@@ -1,0 +1,18 @@
+FILE                          INPUTS                                    PURPOSE        
+
+chargedatagenerator.py        [1] number of charges                     For generating 2D files that store the position of charges making   
+                              [2] radius of ring                        up certain specific geometries. Filename include the type of geometry
+                              [3] length of line                        the number of charges and the size of the geometry.
+
+electfricfieldevaluator.py    [1] GEOMETRYfile                          Determines the value of that electric field at a given point, for a 
+                              [2] chargesfile                           given set of charge and geometry files. It is meant to simulate real
+                              [Note] may have more                      world physics, and sets derived formulae for lines of charge, rings
+                              than one set of these                     of charge and plates of charge along with combinations.
+
+path.py                       [1] GEOMETRYfile                          Determines the path of a test charge over a set of time steps whose 
+                              [2] chargesfile                           value is specified in the code (dt = 1 ps). Uses knowledge of the 
+                              [Note] may have more                      positions of the charges from GEOMETRYfile to determine a potential
+                              than one set of these                     which governs the equations of motion for that given system.
+
+plotfield.py                  [1] GEOMETRYfile                          Plots positions of the charges given their posiitons as an input file
+

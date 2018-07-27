@@ -1,0 +1,11 @@
+This directory is intended to generate a distribution of angles based on the sampling of angles used in PIMC for rotations. 
+
+There is one file, named FILENAME, that essentially does the same thing as RotOnly integrator does, but for the specific case of 
+N H2O's in a nanotube of length L, where N is 2 and L is 0.6 nm, making the distance between molecules 0.6 nm.
+
+FILENAME starts with the H2O's oriented such that the rotation matrix that maps the SFF to the BFF is the identity matrix.
+
+It then proposes new angles in such a way that the amount of times the simulation accepts the proposed angles divided by the total
+number of proposed angles is roughly equal to 0.3 (i.e. excepts 30% of proposed steps).
+
+There is hope that the stripped down version of this code will generate the same distribution as what is generated in MoRiBS.
